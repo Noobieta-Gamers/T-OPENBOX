@@ -1,0 +1,21 @@
+#!/bin/bash
+
+pass='number1 number2 number 3 number4 number12 number13 number14 number15 number16 number17 number18 number19 number20 number21 number22 number23 number24 number25 number27 number28 number29 number30 number31 number32 number33 number35 number36 number37 number38 numbet39 numbet40 number41 number42 number43 number44 number45 number46 number47 number49 number50 number51 number52 number53 number54 number55 number56 number57 number58 number59 number60 number61 number62 number63 number64 number65 number67 number68 number69 number70 number71 number72 number73 number74 number75 number77 number78 number79 number80'
+chk='number74'
+result="Not Found!"
+figlet -c -f slant LOADING BRO | lolcat
+date | lolcat
+echo -n "Working...🐝"
+echo -ne "\033[1;31m\033[7m\033[?25l"
+for i in $pass ; do
+   sleep 0.4s
+   if [ "$i" == "$chk" ]; then
+      result="{Beres bray  \(^_^)}"
+      break
+   else
+      echo -n " "
+   fi
+done
+echo -ne "\r  Don't Forget Like And Subscribe 🤓\033[1;32m\033[?25h\033[00m"
+echo $result
+echo
