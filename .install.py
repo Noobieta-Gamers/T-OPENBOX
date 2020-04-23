@@ -50,6 +50,7 @@ def iTopenbox():
 def iRunvnc():
       print ('Run VNC server default localhost:1')
       os.system('vncserver')
+      os.system("cp -rf .vnc/xstartup $HOME")
 
 
 print ('''                                \x1b[00m\033[041m -=[ T-OPENBOX ]=-  \033[00m\x1b[1;00m
