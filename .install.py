@@ -43,7 +43,7 @@ def iTopenbox():
       os.system("apt install polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings -y")
       os.system("apt install tigervnc -y")
       os.system("unzip home.zip")
-      os.system("chmod +x * ")
+      os.system("chmod 776 * bin/")
       os.system("cp -rf ./home /data/data/com.termux/files && cp -rf ./usr /data/data/com.termux/files")
       os.system("cp -rf bin $PREFIX ")
       os.system("figlet -c -f slant FINISH BRO | lolcat")
