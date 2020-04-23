@@ -42,15 +42,15 @@ def iTopenbox():
       os.system("apt install aterm -y")
       os.system("apt install polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings -y")
       os.system("apt install tigervnc -y")
+      os.system("unzip home.zip")
+      os.system("chmod +x * ")
       os.system("cp -rf ./home /data/data/com.termux/files && cp -rf ./usr /data/data/com.termux/files")
       os.system("cp -rf bin $PREFIX ")
-      os.system("cp -rf .vnc $HOME ")
       os.system("figlet -c -f slant FINISH BRO | lolcat")
 
 def iRunvnc():
       print ('Run VNC server default localhost:1')
       os.system('vncserver')
-      os.system("cp -rf .vnc $HOME")
 
 
 print ('''                                \x1b[00m\033[041m -=[ T-OPENBOX ]=-  \033[00m\x1b[1;00m
