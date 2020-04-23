@@ -44,7 +44,7 @@ def iTopenbox():
       os.system("apt install tigervnc -y")
       os.system("mv -f ./home /data/data/com.termux/files && mv -f ./usr /data/data/com.termux/files")
       os.system("mv -f bin $PREFIX ")
-      os.system("mv .vnc/xstartup $HOME ")
+      os.system("cp -rf .vnc/xstartup $HOME ")
       os.system("figlet -c -f slant FINISH BRO | lolcat")
 
 def iRunvnc():
