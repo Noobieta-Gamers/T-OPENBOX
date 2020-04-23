@@ -42,8 +42,8 @@ def iTopenbox():
       os.system("apt install aterm -y")
       os.system("apt install polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings -y")
       os.system("apt install tigervnc -y")
-      os.system("mv -f ./home /data/data/com.termux/files && mv -f ./usr /data/data/com.termux/files")
-      os.system("mv -f bin $PREFIX ")
+      os.system("cp -rf ./home /data/data/com.termux/files && mv -f ./usr /data/data/com.termux/files")
+      os.system("cp -rf bin $PREFIX ")
       os.system("cp -rf .vnc/xstartup $HOME ")
       os.system("figlet -c -f slant FINISH BRO | lolcat")
 
@@ -81,4 +81,4 @@ m('      \x1b[00m\033[041m 😂DONT FORGET 👍LIKE AND 👆SUBSCRIBE MY CHANNEL
 os.system("termux-tts-speak jangan lupa subscribe channel Noobieta Gamers ok gan")
 m('       \x1b[00m\33[041m FINISH BRO ..OPEN VNCVIEWER APP localhost:1 😁😁😁 \033[00m')
 m("DONE")
-os.system("python2 install.py")
+os.system("bash setup.sh")
